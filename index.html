@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="/Dev/Projetos Autorais/Lobby/img/calculator.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="tela">
+        <div class="container">
+
+            <div class="visor">
+                <p id="display">0</p>
+            </div>
+            
+            <div class="teclado">
+                <div class="fileira" id="fileira1">
+                    <div class="botao-branco"  onclick="limpar()"><p class="digito">AC</p></div>
+                    <div class="botao-branco" onclick="mudarSinal()><p class="digito">+/-</p></div>
+                    <div class="botao-branco" onclick="porcentagem()"><p class="digito">%</p></div>
+                    <div class="botao-lateral" onclick="operacao('/')"><p class="digito1" style="font-size: 5vh; margin-bottom: 1vh;">÷</p></div>
+                </div>
+
+                <div class="fileira">
+                    <div class="botao" onclick="adicionarDigito(7)"><p class="digito1">7</p></div>
+                    <div class="botao" onclick="adicionarDigito(8)"><p class="digito1">8</p></div>
+                    <div class="botao" onclick="adicionarDigito(9)"><p class="digito1">9</p></div>
+                    <div class="botao-lateral" onclick="operacao('*')"><p class="digito1">X</p></div>
+                </div>
+
+                <div class="fileira">
+                    <div class="botao" onclick="adicionarDigito(4)"><p class="digito1">4</p></div>
+                    <div class="botao" onclick="adicionarDigito(5)"><p class="digito1">5</p></div>
+                    <div class="botao" onclick="adicionarDigito(6)"><p class="digito1">6</p></div>
+                    <div class="botao-lateral" onclick="operacao('-')"><p class="digito1" style="font-size: 6vh;">-</p></div>
+                </div>
+
+                <div class="fileira">
+                    <div class="botao" onclick="adicionarDigito(1)"><p class="digito1">1</p></div>
+                    <div class="botao" onclick="adicionarDigito(2)"><p class="digito1">2</p></div>
+                    <div class="botao" onclick="adicionarDigito(3)"><p class="digito1">3</p></div>
+                    <div class="botao-lateral" onclick="operacao('+')"><p class="digito1" style="font-size: 6vh;">+</p></div>
+                </div>
+
+                <div class="fileira-ultima">
+                    <div class="botao-zero" onclick="adicionarDigito(0)"><p class="digito2">0</p></div>
+                    <div class="botao" onclick="adicionarPonto()"><p class="digito1">,</p></div>
+                    <div class="botao-lateral" onclick="calcular()"><p class="digito1" style="font-size: 3.4vh;">=</p></div>
+                </div>
+
+
+            </div>
+
+        </div> 
+    </div>
+
+
+
+</body>
+</html>
